@@ -1,0 +1,19 @@
+h1.mb-5 #{pagina}
+.row
+    each paquete in paquetes
+        .col-md-6.col-lg-4.mb-4
+            .card
+                img(src=`${paquete.imagen}`, alt="paquetes de limpieza", class="img-fluid")
+                .card-body
+                    h2=paquete.nombre
+                    p 
+                        span
+                            i.fa-solid.fa-dollar-sign
+                        | #{paquete.precio}
+                    p 
+                        span
+                            i.fa-solid.fa-medal
+                        | #{paquete.clase}
+
+                    p #{paquete.descripcion}
+                    a(href=`paquetes/${paquete.id}`, class="btn btn-succes btn-block") Mas Informacion 

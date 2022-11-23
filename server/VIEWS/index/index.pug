@@ -1,0 +1,28 @@
+extends ../layout/index
+block slider
+       .slider
+        H1 limpieza
+        p COMODIDAD A TU ALCANCE!
+block contenido 
+        main.container.mt-5 
+                h2.text-center.mb-5 Sobre Nosotros
+                .row.mb-5 
+                        .col-md-6 
+                                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum reprehenderit explicabo eius ratione at fugit in dicta accusantium mollitia, labore, ab asperiores accusamus omnis blanditiis temporibus! Dignissimos sequi architecto amet?
+                                p Lasdkalsdj lkajsdaklsjdl;a laskjdasjdasldasdasdasd asdasd asdasdasd asdasd
+                        .col-md-6
+                                img(src="img/logo.jpg", alt="" class="img-fluid")
+                
+                include ../layout/partials/paquetes.pug
+                
+        
+        .descuento 
+                .contenido.col-12.col-md-6
+                       h3 5% de Descuento 
+                       p.titulo Paquetes Residenciales
+                       p.dias Todo el mes de Diciembre 
+                       p.fecha $30 DOLARES
+
+        .section.container
+                include ../layout/partials/testimoniales.pug        
+                                                                

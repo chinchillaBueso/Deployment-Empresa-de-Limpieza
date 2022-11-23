@@ -1,0 +1,22 @@
+.row   
+    .col-md-12
+            h3.mt-5 Lee sobre Nuestros Clientes y sus Experiencias 
+            .row
+                if(testimoniales)
+                    each testimonial in testimoniales
+                            .col-md-6.col-lg-4.mb-4
+                                    .card   
+                                            .card-body
+                                                    blockquote.blockquote 
+                                                             h2 
+                                                               
+                                                             pmb-0 
+                                                                    i.fa-solid.fa-user.fs-3.text-danger
+                                                                    |
+                                                                    |    
+                                                                    |#{testimonial.mensaje} 
+                                                             figure
+                                                                    figcaption.blockquote-footer.text-danger.text-end.mt-2
+                                                                            |"#{testimonial.nombre}"
+                                                                            br
+                                                                            cite(title='Source Title')|#{testimonial.correo}

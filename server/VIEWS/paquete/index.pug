@@ -1,0 +1,15 @@
+extends ../layout/index
+block contenido 
+    main.container.mt-5 
+        .row.mb-5
+            .col-md-5
+                img(src=`${paquete.imagen}` alt="imagenesmasterqualiti", class="img-fluid")
+            .col-md-7 
+                h1 #{paquete.nombre}
+                p 
+                    i.fa-solid.fa-dollar-sign
+                    | #{paquete.precio}
+                p 
+                    i.fa-solid.fa-medal
+                    | #{paquete.clase}
+                p #{paquete.descripcion}

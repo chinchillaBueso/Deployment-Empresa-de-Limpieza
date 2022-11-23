@@ -1,0 +1,29 @@
+extends ../layout/index
+block contenido 
+        main.container.mt-5
+                h1 #{pagina}
+                include ../layout/partials/testimoniales.pug
+                                
+                                         
+
+                .row
+                        .col-md-12
+                                .row.justify-content-center
+                                        .col-md-8 
+                                                h2 Dejanos tu Opinion!
+                                                if(errores)
+                                                        each error in errores 
+                                                                .alert.alert-danger.yecy-center=error.mensaje
+                                                form(action="/experiencias", method="POST")
+                                                        .form-group
+                                                                label(for="nombre") Nombre
+                                                                input(name="nombre" id="nombre", type="text", class="form-control"  placeholder="Ingresa tu nombre Completo" value=nombre) 
+                                                        .form-group
+                                                                label(for="correo") Correo Electronico
+                                                                input( name="correo" id="correo", type="text", class="form-control", placeholder="Ingresa tu Correo"  value=correo) 
+                                                        .form-group
+                                                                label(for="mensaje") Nombre
+                                                        textarea#mensaje(name="mensaje", rows="3", class="form-control",  placeholder="Tu mensaje")=mensaje     
+
+                                                        input.btn.btn-success.btn-block(type="submit" value="Enviar Opinion" )
+

@@ -1,0 +1,24 @@
+header  
+    .navegacion
+        .container-fluid 
+            .row.justify-content-center.justify-content-md-between.align-items-center.py-2
+                .col-6.col-md-4
+                    a(href="/")
+                        img(src="/img/Logo.png", alt="MASTER QUALITI CLEANING LLC")
+
+                .col-6.col-md-8.final  
+                    nav.nav.justify-content-center.justify-content-md-end
+                        a.nav-link(href="/nosotros", class=ruta==='/nosotros' ? 'active':'') Nosotros
+                        a.nav-link(href="/paquetes", class=ruta==='/paquetes' ? 'active':'') Paquetes 
+                        a.nav-link(href="/experiencias", class=ruta==='/experiencias' ? 'active':'') Experiencias
+                        a.nav-link(href="/contactanos", class=ruta==='/contactanos' ? 'active':'') Contactanos
+
+                .col-6.menu
+                    h1 
+                       i.fa-solid.fa-bars 
+
+        .menu2#menu
+            a(href="/nosotros", class="nav-link") Nosotros
+            a(href="/paquetes", class="nav-link") Paquetes 
+            a(href="/experiencias", class="nav-link") Experiencias
+            a(href="/contactanos", class="nav-link") Contactanos 

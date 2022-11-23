@@ -1,0 +1,25 @@
+block slider
+        .carru
+                #carouselExampleControlsNoTouching.carousel.slide(data-bs-touch='false')
+                        .carousel-inner
+                                .carousel-item.active
+                                        img.d-block.w-100(src='img/slider1.jpg', alt='...' class="d-block w-500")
+                                        .carousel-caption.d-none.d-md-block
+                                                h5 First slide label
+                                                p Some representative placeholder content for the first slide.
+                                .carousel-item
+                                        img.d-block.w-100(src='img/slider2.jpg', alt='...' class="d-block w-100")
+                                        .carousel-caption.d-none.d-md-block
+                                                h5 First slide label
+                                                p Some representative placeholder content for the first slide.
+                                .carousel-item
+                                        img.d-block.w-100(src='img/slider3.jpg', alt='...' class="d-block w-100")
+                                        .carousel-caption.d-none.d-md-block
+                                                h5 First slide label
+                                                p Some representative placeholder content for the first slide.
+                        button.carousel-control-prev(type='button', data-bs-target='#carouselExampleControlsNoTouching', data-bs-slide='prev')
+                                span.carousel-control-prev-icon(aria-hidden='true')
+                                span.visually-hidden Previous
+                        button.carousel-control-next(type='button', data-bs-target='#carouselExampleControlsNoTouching', data-bs-slide='next')
+                                span.carousel-control-next-icon(aria-hidden='true')
+                                span.visually-hidden Next

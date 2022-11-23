@@ -1,0 +1,242 @@
+h1{
+    color: brown;
+}
+
+header .navegacion img{
+    width: 180px;
+}
+
+header .navegacion {
+    background-color: #272D61;
+}
+
+header .navegacion a{
+    font-size: 1.4em;
+    color:#7CE151 ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+}
+
+header .menu2{
+   
+    display: none;
+}
+
+ header .navegacion .row nav a.active{
+    color: #FFD62F;
+}
+
+header .navegacion a:hover{
+    color:#FFD62F ;
+}
+header .navegacion .col-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navegacion .menu{
+    display: none;
+}
+header .navegacion .final{
+    display: flex;
+    justify-content: end;
+}
+header .navegacion img:hover{
+    transform: scale(1.03);
+
+}
+
+/*clase home*/
+.home{
+    position: relative;
+
+}
+
+.home .navegacion{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*MAIN*/
+main .row{
+    display: flex;
+    align-items: center;
+}
+main h1{
+    color:#272D61;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.7em
+}
+main p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+main .listado-iconos{
+    background-color: #60606038;
+}
+main .listado-iconos .row{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+/*FOOTER*/
+
+footer{
+    background-color: #606060;
+    color: white;
+}
+
+footer .row .nav a,footer .row  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    color: white;
+}
+
+footer .row p span{
+    color: #7CE151;
+}
+
+footer .row .nav a:hover{
+    color: #7CE151;
+}
+
+footer .de{
+    display: flex;
+    flex-direction: column;
+}
+footer .footeriz{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2em;
+}
+
+/*SLIDER*/
+.slider{
+    background-image:linear-gradient(#181818be,#18181842), url("../img/slider1.jpg");
+    min-height: 600px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.slider h1{
+    font-size: 6em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.slider p{
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #7CE151;
+}
+/*descuentos*/
+.descuento{
+    background-image:linear-gradient(#181818be,#18181842), url('../img/cleanliness-g46cb128c0_640.jpg');
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+}
+
+.descuento .contenido{
+    background-color: #fcfcfc81;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.descuento .contenido h3,.fecha{
+    color:#272D61;
+    font-family:'Roboto', sans-serif ;
+    font-size: 3em;
+    margin: 0;
+}
+
+.descuento .titulo{
+    color: aliceblue;font-size: 2em;
+
+}
+.descuento p{
+    font-weight: bold;
+}
+/*ESTILOS PAQUETES*/
+.container .row .card .card-body h2{
+    color:#272D61;
+}
+
+.container .row .card .card-body p span{
+    color:#7CE151;
+}
+
+.container .row .card .card-body a{
+    background-color: #7CE151;
+    width: 100%;
+    color: #272D61;
+    font-weight: bold;
+}
+
+.container .row .card .card-body a:hover{
+    background-color: #498530;
+    color: aliceblue;
+}
+
+/*Estilos de opiniones*/
+.btn{
+    width: 100%;
+    margin-top: 5px;
+}
+/*Mediaqueris*/
+
+@media screen and (max-width:768px){
+    header .navegacion .container-fluid .final{
+        display: none;
+    }
+
+    
+    header .navegacion .container-fluid .menu{
+        display: block;
+        display: flex;
+        justify-content: end;
+        padding-right: 2em;
+    }
+
+    header .navegacion .container-fluid .menu h1{
+        color: #7CE151;
+    }
+
+    header .navegacion .container-fluid .menu h1:hover{
+        color:#FFD62F;
+    }
+    header .navegacion .visualizar{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+        animation-duration: 3s;
+    }
+
+    .descuento{
+        grid-template-columns:1fr;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+}
